@@ -241,10 +241,22 @@ We can check if Bella has any documents. Type the command: @command{ls Documents
 @image{images/ls-Music-Documents,,56pt,Example of Linux command ls on Documents directory,png}
 @*
 @*
-Bella has no documents.
+The ``Document'' directory is empty. Bella has no documents.
 @*
 @*
 @center @image{images/Bella-4,,180pt,Picture of Bella,jpg}
+@*
+@*
+The command @command{ls} has the ability to match filenames using a wildcard. Try typing the command @command{ls D*}.
+@*
+@*
+The asterik '*' or star character tells the command @command{ls} to match any string after the letter 'D'. The contents of all directories begining with the letter 'D' will be displayed.
+@*
+@*
+@image{images/ls-wild-card,,83pt,Example of Linux command ls on Documents directory,png}
+@*
+@*
+The directories @file{Desktop}, @file{Documents} and @file{Downloads} are all empty.
 @*
 @*
 Use the command @command{ls} to explore the Linux filesystem. Type the command: @command{ls /}
@@ -504,8 +516,7 @@ Confirm the removal of @file{2.txt} and @file{3.txt} by wildcard listing ``.txt'
 
 @section @command{gedit}
 @cindex gedit
-The command @command{gedit} is a graphical text editor. @command{gedit} can be used to create a new file.
-Type the command: @command{gedit myfile.txt} to create and edit the file @file{myfile.txt}
+The command @command{gedit} is a graphical text editor. @command{gedit} can be used to create or edit files.  @command{gedit} can be started from the command line. Type the command: @command{gedit myfile.txt} to create and edit the file @file{myfile.txt}
 @*
 @*
 @image{images/gedit-0,,27pt,Picture of Bella,png}
@@ -517,7 +528,7 @@ The @command{gedit} graphical text editor will display. Feel free to enter any t
 @center @image{images/gedit-1,,230pt,Picture of Bella,png}
 @*
 @*
-In this example I have entered the text ``This is a test of the gedit graphical editor'' and pressed newline. Proceed to press the ``Save'' button to save the file @file{myfile.txt}
+In this example I have entered the text ``This is a test of the gedit graphical editor'' and pressed newline. Press the ``Save'' button to save the file @file{myfile.txt}
 @*
 @*
 @center @image{images/gedit-2,,50pt,Picture of Bella,png}
@@ -531,7 +542,7 @@ Also try the command: @command{ls *.txt} to list all files ending with @file{.tx
 @image{images/gedit-3,,60pt,Picture of Bella,png}
 @*
 @*
-Proceed to use the command @command{gedit myfile.txt} to add more text or change the file @file{myfile.txt}.
+Feel free to use the command @command{gedit myfile.txt} to add more text or change the file @file{myfile.txt}.
 @*
 @*
 @center @image{images/Bella-15,,180pt,Picture of Bella,jpg}
@@ -575,10 +586,15 @@ Proceed to use the command @command{gedit myfile.txt} to add more text or change
 
 @section Fun
 
+@subsection @command{fortune}
+
 @subsection @command{cowsay}
 
-@subsection @command{toilet}
+@subsection @command{figlet}
 
+@subsection @command{banner}
+
+@subsection @command{toilet}
 
 @node Concept index
 @unnumbered Concept index
