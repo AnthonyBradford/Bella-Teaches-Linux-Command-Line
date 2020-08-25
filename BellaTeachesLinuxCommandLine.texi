@@ -107,6 +107,7 @@ Bella Teaches the Linux Command Line. Copyright @copyright{} 2020.
 @menu
 * Login Screen Desktop and Terminal::
 * Linux Commands::
+* Fun Commands::
 * Concept index::	Index of concepts.
 @end menu
 @end ifnottex
@@ -158,7 +159,7 @@ Open a Linux terminal. On the upper left hand side of the screen select Activiti
 @center @image{images/Activities,,100pt,Activies on upper left hand of Linux Desktop,png}
 @*
 @*
-A input box saying ``Type To Search...'' box will appear.
+An input box saying ``Type To Search...'' box will appear.
 @*
 @*
 @center @image{images/TypeToSearch,12cm,2.5cm,Type To Search box,png}
@@ -170,7 +171,7 @@ Inside the ``Type To Search...'' input box type the word ``terminal''.
 @center @image{images/TypeToSearchTerminal,12cm,3.5cm,Terminal typed into Type to Search box,png}
 @*
 @*
-The Linux terminal icon will appear. Select the terminal icon by clicking the left mouse button. The terminal is also known as the Linux Shell or the command line.
+The Linux terminal icon will appear. Select the terminal icon by clicking on it with the left mouse button. The terminal is also known as the Linux shell or the command line.
 @*
 @*
 @center @image{images/Terminal,12cm,7cm,Image of the Linux Terminal,png}
@@ -241,16 +242,16 @@ We can check if Bella has any documents. Type the command: @command{ls Documents
 @image{images/ls-Music-Documents,,56pt,Example of Linux command ls on Documents directory,png}
 @*
 @*
-The ``Document'' directory is empty. Bella has no documents.
+The @file{Document} directory is empty. Bella has no documents.
 @*
 @*
 @center @image{images/Bella-4,,180pt,Picture of Bella,jpg}
 @*
 @*
-The command @command{ls} has the ability to match filenames using a wildcard. Try typing the command @command{ls D*}.
+The command @command{ls} has the ability to match filenames using a wildcard. Try typing the command: @command{ls D*}
 @*
 @*
-The asterik '*' or star character tells the command @command{ls} to match any string after the letter 'D'. The contents of all directories begining with the letter 'D' will be displayed.
+The asterik * or star character tells the command @command{ls} to match any string after the letter @file{D}. The contents of all directories begining with the letter @file{D} will be displayed.
 @*
 @*
 @image{images/ls-wild-card,,83pt,Example of Linux command ls on Documents directory,png}
@@ -265,7 +266,7 @@ Use the command @command{ls} to explore the Linux filesystem. Type the command: 
 @image{images/ls-root,,73pt,Example of Linux command ls on Documents directory,png}
 @*
 @*
-This lists the contents of the ``/'' which is known as root.
+This lists the contents of the @file{/} which is known as root.
 @*
 Type the command: @command{ls /home}
 @*
@@ -273,10 +274,11 @@ Type the command: @command{ls /home}
 @image{images/ls-home,,41pt,Example of Linux command ls on Documents directory,png}
 @*
 @*
-Bella's home directory might be listed with any other users of your system.
+Bella's home directory shows another user. Your system may display other users.
 @*
 @*
-The command @command{ls} can also take options (also called switches). The listing contents of all subdirectories can be done with the command: @command{ls -R}
+The command @command{ls} can also take options (also called switches). The listing of the contents of all subdirectories can be done with the command: @command{ls -R}
+@*
 @*
 The @command{-R} part of command tells @command{ls} to recursively list all subdirectories. Try typing the command: @command{ls -R}
 
@@ -297,13 +299,13 @@ At the Linux terminal type the command: @command{cd Music}.
 Now the current working directory has changed to the Music directory.
 @*
 @*
-The command @command{ls} will display the contents of the ``Music'' directory.
+The command @command{ls} will display the contents of the @file{Music} directory.
 @*
 @*
 @image{images/cd-Music-ls,,39pt,Example of Linux command ls on Documents directory,png}
 @*
 @*
-The ``Music'' is empty.
+The @file{Music} is empty.
 @*
 @*
 The command @command{pwd} will display the full directory path.
@@ -315,7 +317,7 @@ The command @command{pwd} will display the full directory path.
 @center @image{images/Bella-6,,180pt,Picture of Bella,jpg}
 @*
 @*
-To pop up from the ``Music'' directory type the command: @command{cd ..}
+To pop up from the @file{Music} directory type the command: @command{cd ..}
 @*
 @*
 @center @image{images/cd-dot-dot,,70pt,Picture of Bella,jpg}
@@ -343,26 +345,26 @@ her home directory.
 @image{images/ls,,37pt,Example of Linux command ls,png}
 @*
 @*
-To create a directory named ``Test'' type the command: @command{mkdir Test}
+To create a directory named @file{Test} type the command: @command{mkdir Test}
 @*
 @*
 @image{images/ls-mkdir-Test,,45pt,Example of Linux command ls,png}
 @*
 @*
 Try typing the command: @command{ls} to confirm this directory was created.
-You should see the directory ``Test'' listed with the other directories.
+You should see the directory @file{Test} listed with the other directories.
 @*
 @*
 @image{images/ls-mkdir-Test-ls,,77pt,Example of Linux command ls,png}
 @*
 @*
-To remove the directory named ``Test'' type the command: @command{rmdir Test}
+To remove the directory named @file{Test} type the command: @command{rmdir Test}
 @*
 @*
 @image{images/ls-mkdir-Test-ls-rmdir-Test,,85pt,Example of Linux command ls,png}
 @*
 @*
-Type the command @command{ls} to confirm that the directory ``Test'' has been removed.
+Type the command @command{ls} to confirm that the directory @file{Test} has been removed.
 @*
 @*
 @c @image{images/command-ls,15cm,2cm,Example of Linux command ls,png}
@@ -388,13 +390,13 @@ Now try typing the command: @command{echo Hello}
 @image{images/echo-echo-Hello,,56pt,Example of Linux command ls,png}
 @*
 @*
-The text ``Hello'' will be displayed to the terminal. The command @command{echo} can also push text to a file.
+The text @file{Hello} will be displayed to the terminal. The command @command{echo} can also push text to a file.
 @*
 @*
 Try the command: @command{echo "This is a test" > file.txt}
 @*
 @*
-The greater-than sign '>' tells the command @command{echo} to redirect the output to the file. The output will not go to the display. 
+The greater-than sign @file{>} tells the command @command{echo} to redirect the output to the file. The output will @i{not} go to the display. 
 @*
 @*
 @image{images/echo-echo-Hello-echo-file,,70pt,Example of Linux command ls,png}
@@ -484,32 +486,32 @@ Confirm the existance of the new files @file{1.txt}, @file{2.txt} and @file{3.tx
 @image{images/cp-5,,130pt,Picture of Bella,jpg}
 @*
 @*
-Concatenate the files @file{1.txt}, @file{2.txt} and @file{3.txt} to be diplayed on the screen with the command: @command{cat 1.txt 2.txt 3.txt}
+Concatenate the files @file{1.txt}, @file{2.txt} and @file{3.txt} to the screen display with the command: @command{cat 1.txt 2.txt 3.txt}
 @*
 @*
 @image{images/cp-6,,170pt,Picture of Bella,jpg}
 @*
 @*
-All three files are displayed on the screen. All three files have the same contents. Remove one of the files with the command: @command{rm 1.txt}
+All three files are displayed on the screen back to back. All three files have the same contents. Remove one of the files with the command: @command{rm 1.txt}
 @*
 @*
 @image{images/cp-7,,170pt,Picture of Bella,jpg}
 @*
 @*
-Using what is known as a wildcard have command @command{ls} check for files only ending with ``.txt'' file extension. Try the command: @command{ls *.txt}
+Using what is known as a wildcard have command @command{ls} check for files only ending with @file{.txt} file extension. Try the command: @command{ls *.txt}
 @*
 @*
 @image{images/cp-8,,35pt,Picture of Bella,jpg}
 @*
 @*
-Only files with the ``.txt'' file extension have been displayed. The file @file{1.txt} has been removed. Remove the files @file{2.txt} and @file{3.txt} with
+Only files with the @file{.txt} file extension have been displayed. The file @file{1.txt} has been removed. Remove the files @file{2.txt} and @file{3.txt} with
 the command command: @command{rm 2.txt 3.txt}
 @*
 @*
 @image{images/cp-9,,23pt,Picture of Bella,jpg}
 @*
 @*
-Confirm the removal of @file{2.txt} and @file{3.txt} by wildcard listing ``.txt'' file extension with command: @command{ls *.txt}
+Confirm the removal of @file{2.txt} and @file{3.txt} by wildcard listing @file{.txt} file extension with command: @command{ls *.txt}
 @*
 @*
 @image{images/cp-10,,35pt,Picture of Bella,jpg}
@@ -556,26 +558,59 @@ Feel free to use the command @command{gedit myfile.txt} to add more text or chan
 
 @section @command{date}
 @cindex date
+The command @command{date} will print the system date and time.
+@*
+@*
+@image{images/date-1,,40pt,Image of the command date}
 @*
 @*
 @center @image{images/Bella-19,,180pt,Picture of Bella,jpg}
 
 @section @command{cal}
 @cindex cal
+The command @command{cal} will display a calendar. With no arguments to the command, the current month is displayed. Todays date will be highlighted.
+@*
+@*
+@image{images/cal-1,,110pt,Image of the command cal}
+@*
+@*
+The command @command{cal} can display all months for a year. The year to display can be given as an argument to the command @command{cal}.
+Try typing the command: @command{cal 2020}
+@*
+@*
+@image{images/cal-2,,400pt,Image of the command cal 2020}
+@*
+@*
+The command @command{cal} can display calendars in the past. Try typing the command @command{cal} and giving the your birthday year as the first argument.
+If your birthday year was 2009 you would type: @command{cal 2009}
 @*
 @*
 @center @image{images/Bella-14,,180pt,Picture of Bella,jpg}
 
 @section @command{clear}
 @cindex clear
+To clear the terminal screen type the command: @command{clear}
+@*
+@*
+@image{images/clear-1,,250pt,Image of the command clear}
 @*
 @*
 @center @image{images/Bella-18,,180pt,Picture of Bella,jpg}
 
 @section @command{man}
 @cindex man
+The command @command{man} provides a reference manual to commands. All commands such as @command{whoami}, @command{pwd}, @command{ls}, @command{cd},
+@command{mkdir}, @command{rmdir}, @command{echo}, @command{rm}, @command{rm}, @command{more}, @command{less}, @command{date}, @command{cal} and @command{clear} have reference manuals.
 @*
 @*
+The command reference manuals give information on command usage and options. Command switches (options) and arguments are described.
+Try command @command{man ls}
+@*
+@*
+@image{images/man-ls,,250pt,Image of the command clear}
+@*
+@*
+Explore more @command{man} pages. The command @command{man} even has a reference manual page. Try the command: @command{man man}.
 @center @image{images/Bella-17,,180pt,Picture of Bella,jpg}
 
 @section @command{top}
@@ -584,17 +619,23 @@ Feel free to use the command @command{gedit myfile.txt} to add more text or chan
 @*
 @center @image{images/Bella-12,,180pt,Picture of Bella,jpg}
 
-@section Fun
+@node Fun Commands
+@chapter Fun Commands
 
-@subsection @command{fortune}
+@section @command{fortune}
+@cindex fortune
 
-@subsection @command{cowsay}
+@section @command{cowsay}
+@cindex cowsay
 
-@subsection @command{figlet}
+@section @command{figlet}
+@cindex figlet
 
-@subsection @command{banner}
+@section @command{banner}
+@cindex banner
 
-@subsection @command{toilet}
+@section @command{toilet}
+@cindex toilet
 
 @node Concept index
 @unnumbered Concept index
