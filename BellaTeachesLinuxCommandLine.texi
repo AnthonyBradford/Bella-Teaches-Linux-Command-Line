@@ -393,7 +393,7 @@ Now try typing the command: @command{echo Hello}
 The text @file{Hello} will be displayed to the terminal. The command @command{echo} can also push text to a file.
 @*
 @*
-Try the command: @command{echo "This is a test" > file.txt}
+Try typing the command: @command{echo "This is a test" > file.txt}
 @*
 @*
 The greater-than sign @file{>} tells the command @command{echo} to redirect the output to the file. The output will @i{not} go to the display. 
@@ -498,7 +498,7 @@ All three files are displayed on the screen back to back. All three files have t
 @image{images/cp-7,,170pt,Picture of Bella,jpg}
 @*
 @*
-Using what is known as a wildcard have command @command{ls} check for files only ending with @file{.txt} file extension. Try the command: @command{ls *.txt}
+Using what is known as a wildcard have command @command{ls} check for files only ending with @file{.txt} file extension. Try typing the command: @command{ls *.txt}
 @*
 @*
 @image{images/cp-8,,35pt,Picture of Bella,jpg}
@@ -604,35 +604,85 @@ The command @command{man} provides a reference manual to commands. All commands 
 @*
 @*
 The command reference manuals give information on command usage and options. Command switches (options) and arguments are described.
-Try command @command{man ls}
+Try typing the command @command{man ls}
 @*
 @*
 @image{images/man-ls,,250pt,Image of the command clear}
 @*
 @*
-Explore more @command{man} pages. The command @command{man} even has a reference manual page. Try the command: @command{man man}.
+Explore more @command{man} pages. The command @command{man} even has a reference manual page. Try typing the command: @command{man man}.
 @center @image{images/Bella-17,,180pt,Picture of Bella,jpg}
 
-@section @command{top}
-@cindex top
+@node Fun Commands
+@chapter Fun Commands
+These Linux commands are probably @i{not} installed on your system. If you run the command and its not installed on the system, you will be provided information on how to install the command.
+Your Linux System Administrator will have to install these commands.
 @*
 @*
 @center @image{images/Bella-12,,180pt,Picture of Bella,jpg}
 
-@node Fun Commands
-@chapter Fun Commands
-
 @section @command{fortune}
 @cindex fortune
+The command @command{fortune} will print a random, hopefully interesting adage. Try typing the command: @command{fortune}
+@*
+@*
+@image{images/fortune-1,,40pt,Image of the command date}
+@*
+@*
+Repeat.
+@*
+@*
+@image{images/fortune-2,,40pt,Image of the command date}
+@*
+@*
+Try again.
+@*
+@*
+@image{images/fortune-3,,40pt,Image of the command date}
+@*
+@*
+Instead of typing the command @command{fortune} try pressing the up arrow key on your keyboard and then pressing the enter key.
+Pressing the up arrow key should give you access to previously typed commands.
 
 @section @command{cowsay}
 @cindex cowsay
-
-@section @command{figlet}
-@cindex figlet
+The command @command{cowsay} generates an picture of a cow saying something. Try typing the command: @command{cowsay Hello!}
+@*
+@*
+@image{images/cowsay-1,,130pt,Image of the command date}
+@*
+@*
+Try typing the command: @command{cowsay Bella says hi!}
+@*
+@*
+@image{images/cowsay-2,,130pt,Image of the command date}
+@*
+@*
+Now lets try something interesting. We can take the output of the command @command{fortune} and give it to the command @command{cowsay}. Try typing the command: @command{fortune | cowsay}.
+@*
+@*
+@image{images/cowsay-3,,125pt,Image of the command date}
+@*
+@*
+The vertical line @key{|} is called the pipe. In the command @command{fortune | cowsay} we are piping the output of the command @command{fortune} to the command @command{cowsay}.
+@*
+@*
+Press the up arrow on the keyboard and repeat the command: @command{fortune | cowsay}
+@*
+Try this several times to get different @command{fortune} outputs piped into @command{cowsay}.
 
 @section @command{banner}
 @cindex banner
+The command @command{banner} prints a large banner. Try typing the command: @command{banner Bella}
+@*
+@*
+@image{images/banner-1,,125pt,Image of the command date}
+
+@section @command{boxes}
+@cindex boxes
+
+@section @command{figlet}
+@cindex figlet
 
 @section @command{toilet}
 @cindex toilet
